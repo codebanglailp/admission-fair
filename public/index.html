@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSE Admission Fair • Visitor Log</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <img src="assets/logo.png" alt="University Logo" class="logo" />
+    <h1>CSE স্টল — ভিজিটর এন্ট্রি</h1>
+  </header>
+
+  <section class="card">
+    <h2>নতুন ভিজিটর যোগ করুন</h2>
+    <form id="entryForm">
+      <div class="grid-2">
+        <input required name="name" placeholder="পূর্ণ নাম" />
+        <input required name="phone" placeholder="মোবাইল (01XXXXXXXXX)" pattern="01[3-9]\d{8}" />
+        <input name="address" placeholder="ঠিকানা" />
+        <input required type="number" step="0.01" name="sscGPA" placeholder="SSC GPA (0‑5)" min="0" max="5" />
+        <input required type="number" step="0.01" name="hscGPA" placeholder="HSC GPA (0‑5)" min="0" max="5" />
+        <select name="volunteer" required>
+          <option value="">-- ভলান্টিয়ার নির্বাচন করুন --</option>
+          <option>Musfiq Ayon</option>
+          <option>Afiya Akter Sourovie</option>
+          <option>MD Taimia Seam</option>
+          <option>Tasfia Tusi</option>
+          <option>Jannatul Fiza</option>
+          <option>Israt Jahan Nijhum</option>
+          <option>Munira Akter Nuri</option>
+          <option>Tabassum Anjum Tura</option>
+        </select>
+      </div>
+      <div class="switches">
+        <label><input type="checkbox" name="formPurchased" /> ফর্ম কিনেছে</label>
+        <label><input type="checkbox" name="formSubmitted" /> ফর্ম জমা দিয়েছে</label>
+      </div>
+      <button type="submit" class="btn-primary">সংরক্ষণ</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>লাইভ লিস্ট (সাম্প্রতিক উপরে)</h2>
+    <div class="table-wrapper">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>নাম</th><th>ফোন</th><th>মোট GPA</th>
+            <th>ফর্ম কিনেছে</th><th>ফর্ম জমা</th><th>সময়</th><th>ভলান্টিয়ার</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="foot">© 2025 CSE Department Admission Fair</footer>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

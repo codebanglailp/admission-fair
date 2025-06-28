@@ -1,0 +1,19 @@
+Folder PATH listing
+Volume serial number is 3A92-083E
+C:.
+¦   folder-structure.txt
+¦   
++---public
+¦   ¦   index.html
+¦   ¦   style.css
+¦   ¦   
+¦   +---assets
+¦   ¦       logo.png
+¦   ¦       
+¦   +---src
+¦           app.js
+¦           firebase.js
+¦           
++---src
+        app.js
+        
